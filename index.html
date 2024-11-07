@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的 Todo List</h1>
+            <p class="date"></p>
+        </header>
+        
+        <div class="main-content">
+            <div class="todo-section">
+                <div class="input-section">
+                    <textarea placeholder="输入新的任务..." id="taskInput"></textarea>
+                    <button id="addTask">添加任务</button>
+                </div>
+
+                <div class="filter-section">
+                    <button class="filter-btn active" data-filter="all">所有任务</button>
+                    <button class="filter-btn" data-filter="active">未完成</button>
+                    <button class="filter-btn" data-filter="completed">已完成</button>
+                </div>
+
+                <div class="tasks-container" id="tasksList">
+                    <!-- 任务将通过 JavaScript 动态添加到这里 -->
+                </div>
+            </div>
+            
+            <div class="calendar-section">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <h2 id="currentMonth">2024年3月</h2>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <div class="calendar-weekdays">
+                    <div>日</div><div>一</div><div>二</div><div>三</div><div>四</div><div>五</div><div>六</div>
+                </div>
+                <div class="calendar-days" id="calendarDays">
+                    <!-- 日历天数将通过 JavaScript 动态添加 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
