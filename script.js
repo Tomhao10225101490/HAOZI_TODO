@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             calendarHTML += `
                 <div class="calendar-day ${isToday ? 'today' : ''}">
-                    ${day}
+                    <span>${day}</span>
                     ${completedTasks > 0 ? `<div class="task-count">${completedTasks}完成</div>` : ''}
                 </div>
             `;
